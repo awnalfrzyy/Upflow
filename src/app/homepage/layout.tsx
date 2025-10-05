@@ -1,4 +1,5 @@
-import Navbar from "@/components/navbar";
+import Footer from "@/components/ui/footer";
+import Navbar from "@/components/ui/navbar";
 
 
 
@@ -8,14 +9,15 @@ export default function HomepageLayouts({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body>
-                <Navbar />
-                <main className="">
 
-                    {children}
-                </main>
-            </body>
-        </html>
+        <main>
+            <Navbar />
+            <main className="">
+
+                {children}
+            </main>
+            <Footer />
+        </main>
+
     );
 };

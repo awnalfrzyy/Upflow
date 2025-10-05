@@ -1,0 +1,31 @@
+<svg width="473" height="304" viewBox="0 0 473 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="473" height="304" rx="30" fill="#FCCDC3"/>
+<rect x="61" y="149" width="356" height="51" rx="20" fill="#FED9D1"/>
+<rect x="59" y="213" width="356" height="51" rx="20" fill="#FED9D1"/>
+<rect x="183" y="57" width="97" height="23" rx="11.5" fill="#F7E9E6"/>
+<rect x="183" y="88" width="181" height="23" rx="11.5" fill="#F7E9E6"/>
+<rect x="83" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="183" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="133" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="233" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="108" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="208" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="158" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="258" y="167" width="17" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="81" y="231" width="212" height="17" rx="8.5" fill="#F7E9E6"/>
+<rect x="66" y="36" width="97" height="97" rx="20" fill="#FED9D1"/>
+<circle cx="115" cy="84" r="32" fill="#FCCDC3"/>
+<mask id="mask0_1034_38" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="83" y="52" width="64" height="64">
+<circle cx="115" cy="84" r="32" fill="url(#paint0_linear_1034_38)"/>
+</mask>
+<g mask="url(#mask0_1034_38)">
+<path d="M140.318 123.189C140.348 119.095 139.71 115.036 138.44 111.244C137.17 107.451 135.293 104 132.917 101.088C130.541 98.1751 127.711 95.8577 124.59 94.268C121.469 92.6782 118.118 91.8472 114.727 91.8224C111.336 91.7975 107.973 92.5794 104.829 94.1233C101.685 95.6672 98.822 97.9428 96.4033 100.82C93.9846 103.698 92.0576 107.121 90.7324 110.894C89.4072 114.667 88.7097 118.717 88.6797 122.811L140.318 123.189Z" fill="#F7E9E6"/>
+<path d="M126.999 76.0001C126.999 82.6275 121.626 88.0001 114.999 88.0001C108.371 88.0001 102.999 82.6275 102.999 76.0001C102.999 69.3727 108.371 64.0001 114.999 64.0001C121.626 64.0001 126.999 69.3727 126.999 76.0001Z" fill="#F7E9E6"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1034_38" x1="88" y1="58.5" x2="145" y2="117.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5860C2"/>
+<stop offset="1" stop-color="#292F8D"/>
+</linearGradient>
+</defs>
+</svg>
