@@ -1,17 +1,17 @@
-import Features from "@/components/homepage-parent/components/features";
-import FeaturesSection from "@/components/homepage-parent/components/features-section";
-import Header from "@/components/homepage-parent/header-page"
-import Hiw from "@/components/homepage-parent/components/hiw";
-import Pricing from "@/components/homepage-parent/components/pricing";
-import PricingSectionPage from "@/components/homepage-parent/pricing-section-page";
-import TestimonialPage from "@/components/homepage-parent/testimonini-page";
-import BlogPage from "@/components/homepage-parent/blog-page";
+import Features from "@/components/homepage/components/features";
+import FeaturesSection from "@/components/homepage/components/features-section";
+import Header from "@/components/homepage/header-page"
+import Hiw from "@/components/homepage/components/hiw";
+import Pricing from "@/components/homepage/components/pricing";
+import PricingSectionPage from "@/components/homepage/pricing-section-page";
+import TestimonialPage from "@/components/homepage/testimonini-page";
+import BlogPage from "@/components/homepage/blog-page";
 
 
 
 export default function HomePage() {
     return (
-        <div className="z-0">
+        <div className="z-0 ">
             <Header />
             <div className="py-10">
                 <Features />

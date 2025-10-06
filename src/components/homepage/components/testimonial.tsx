@@ -40,7 +40,7 @@ export default function Testimonial() {
     }
 
     return (
-        <div className="h-screen bg-[#5236FF] relative w-full flex flex-col items-center justify-center overflow-hidden text-white">
+        <div className="h-screen bg-[#5236FF] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen relative w-full flex flex-col items-center justify-center overflow-hidden text-white">
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}

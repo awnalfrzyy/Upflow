@@ -5,7 +5,7 @@ import { BlogSkeleton } from "@/components/skeleton/blog-skeleton"
 
 // Panggil utilitasnya dengan factory dan skeleton
 const BlogSection = withSkeleton(
-    () => import("@/components/homepage-parent/components/blog"),
+    () => import("@/components/homepage/components/blog"),
     BlogSkeleton
 )
 

@@ -10,7 +10,7 @@ const Paraf = [
 
 export default function HeaderAbout() {
     return (
-        <div className="relative min-h-screen flex flex-col justify-center items-center gap-2 px-8 lg:px-48">
+        <div className="relative min-h-screen flex flex-col justify-center items-center gap-2 px-8 ">
 
             {/* Header */}
             <motion.h1

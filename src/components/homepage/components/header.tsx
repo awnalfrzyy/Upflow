@@ -4,8 +4,8 @@ import { Button } from "../../ui/button";
 
 export default function Header() {
     return (
-        <div className="relative h-screen w-full flex items-center px-48 overflow-hidden">
-            <div className="gap-20 flex items-center justify-between">
+        <div className="relative h-screen w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] flex items-center overflow-hidden">
+            <div className="gap-20 flex items-center justify-between px-40">
 
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}

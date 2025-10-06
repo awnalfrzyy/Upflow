@@ -41,7 +41,7 @@ const pricingPlans = [
 
 export default function Pricing() {
     return (
-        <div className="min-h-screen flex flex-col lg:flex-row items-start justify-center px-8 lg:px-48 py-24 bg-white gap-10 lg:gap-x-20">
+        <div className="min-h-screen flex flex-col lg:flex-row items-start justify-center px-8  py-24 bg-white gap-10 lg:gap-x-20">
 
             {/* Header Section */}
             <motion.div

@@ -12,7 +12,7 @@ const Btn = [
 
 export default function Hiw() {
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center text-center px-8 lg:px-48 gap-10">
+        <div className="min-h-screen flex flex-col justify-center items-center text-center gap-10">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}

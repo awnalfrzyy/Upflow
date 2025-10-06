@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 
 export default function FeaturesSection() {
     return (
-        <motion.div className="h-screen flex items-center relative">
-            <div className="flex px-48 z-10 flex-1 ">
+        <motion.div className="h-screen w-screen flex items-center relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden ">
+            <div className="flex px-40 z-10 flex-1 ">
                 <div className="flex flex-col gap-10 max-w-[470px] ">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}

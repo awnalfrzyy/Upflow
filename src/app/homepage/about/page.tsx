@@ -1,15 +1,17 @@
-import HeaderAbout from "@/components/about-parent/header-about";
-import HeaderSectionAbout from "@/components/about-parent/header-section";
+import Carrer from "@/components/about/carrer";
+import HeaderAbout from "@/components/about/header-about";
+import HeaderSectionAbout from "@/components/about/header-section";
+import OnValues from "@/components/about/on-values";
+import OurMission from "@/components/about/ourMission";
 
 export default function About() {
     return (
-        <div className="py-30">
-            <div className="">
-                <HeaderAbout />
-            </div>
-            <div className="">
-                <HeaderSectionAbout />
-            </div>
-        </div>
-    )
-};
+        <main className="flex flex-col py-30">
+            <HeaderAbout />
+            <HeaderSectionAbout />
+            <OurMission />
+            <OnValues />
+            <Carrer />
+        </main>
+    );
+}

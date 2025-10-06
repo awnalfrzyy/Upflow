@@ -5,7 +5,7 @@ import HeaderSkeleton from "@/components/skeleton/header-Homepage-skeleton"
 
 // Panggil utilitasnya dengan factory dan skeleton
 const HeaderPage = withSkeleton(
-    () => import("@/components/homepage-parent/components/header"),
+    () => import("@/components/homepage/components/header"),
     HeaderSkeleton
 )
 

@@ -30,7 +30,7 @@ const CardFeatures = [
 
 export default function Features() {
     return (
-        <div className="h-screen relative flex flex-col justify-center items-center text-center px-48 gap-7">
+        <div className="h-screen relative flex flex-col justify-center items-center text-center gap-7">
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}

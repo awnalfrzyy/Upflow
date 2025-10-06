@@ -12,7 +12,7 @@ export default function HomepageLayouts({
 
         <main>
             <Navbar />
-            <main className="">
+            <main className="px-40">
 
                 {children}
             </main>

@@ -5,7 +5,7 @@ import { PricingSectionSkeleton } from "@/components/skeleton/pricing-section-sk
 
 // Panggil utilitasnya dengan factory dan skeleton
 const PricingSection = withSkeleton(
-    () => import("@/components/homepage-parent/components/pricing-section"),
+    () => import("@/components/homepage/components/pricing-section"),
     PricingSectionSkeleton
 )
 

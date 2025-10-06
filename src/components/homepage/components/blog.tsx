@@ -47,7 +47,7 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="min-h-screen bg-transparent px-28 py-20 flex flex-col gap-12 overflow-hidden">
+            className="min-h-screen bg-transparent py-20 flex flex-col gap-12 overflow-hidden">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
                 <Button variant="disabled" className="w-fit">Blog</Button>
                 <h1 className="font-bold text-4xl text-gray-900 max-w-[539px] leading-tight">

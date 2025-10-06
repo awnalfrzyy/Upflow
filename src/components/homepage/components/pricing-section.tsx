@@ -12,13 +12,13 @@ export default function PricingSection() {
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="min-h-screen flex items-center justify-center px-28 py-20 bg-white">
-            <div className="relative w-full flex flex-row items-center justify-between overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#684FFF] to-[#A388FF] px-16 py-20 text-white shadow-xl">
+            className="min-h-screen flex items-center justify-center py-20 bg-white">
+            <div className="relative w-full flex flex-row items-center justify-between overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#684FFF] to-[#A388FF] px-12 py-18 text-white shadow-xl">
                 <section className="flex flex-col gap-6 max-w-lg z-10">
-                    <h1 className="text-4xl font-extrabold leading-tight">
+                    <h1 className="text-3xl font-extrabold leading-tight">
                         Start your growth journey today
                     </h1>
-                    <p className="text-lg text-white/90 leading-relaxed">
+                    <p className="text-[16px] font-medium text-white/90 leading-relaxed w-[450px]">
                         Subscribe to get the latest updates, tips, and exclusive deals for your team.
                         Grow faster and stay ahead with our powerful platform.
                     </p>
@@ -32,7 +32,8 @@ export default function PricingSection() {
                         <Button
                             type="submit"
                             variant="secondary"
-                            className="bg-white text-[#684FFF] hover:bg-gray-100 font-semibold"
+                            size="xl"
+                            className="bg-white text-[#684FFF] rounded-full  hover:bg-gray-100 font-semibold"
                         >
                             Subscribe
                         </Button>
@@ -40,21 +41,21 @@ export default function PricingSection() {
                 </section>
 
                 {/* KANAN */}
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center flex-shrink-0">
                     <Image
                         src="/Image(3).svg"
                         alt="Panel Illustration"
-                        width={420}
-                        height={420}
+                        width={400}
+                        height={400}
                         className="drop-shadow-2xl z-10"
                         priority
                     />
                     <Image
                         src="/Image(2).svg"
                         alt="Panel Illustration Small"
-                        width={260}
-                        height={260}
-                        className="absolute -bottom-10 right-60 translate-x-10 translate-y-10 opacity-90 z-20"
+                        width={220}
+                        height={220}
+                        className="absolute -bottom-5 right-70 translate-x-10 translate-y-10  z-20"
                         priority
                     />
                 </div>
