@@ -10,7 +10,7 @@ const Navigation = [
     { title: "About", href: "/homepage/about" },
     { title: "Features", href: "/homepage/features" },
     { title: "Pages", href: "/homepage/Pages" },
-    { title: "Blog", href: "/homepage/Blog" },
+    { title: "Blog", href: "/homepage/blog" },
     { title: "Chart", href: "/homepage/Chart" },
 ];
 

@@ -1,0 +1,106 @@
+'use client'
+
+import Image from "next/image"
+import { Button } from "../ui/button"
+import { motion } from "framer-motion"
+
+const blogs = [
+    {
+        image: "/company.jpg",
+        date: "10 Juli 2025",
+        title: "10 Top tips for making your SaaS product sticky",
+        text: "It is a long established fact that a reader will be distracted by readable content when looking at its layout.",
+    },
+    {
+        image: "/company.jpg",
+        date: "12 Juli 2025",
+        title: "How to improve your app performance in 2025",
+        text: "Discover how to make your product faster and more efficient with the latest optimization trends.",
+    },
+    {
+        image: "/company.jpg",
+        date: "14 Juli 2025",
+        title: "Building trust with your customers through UX",
+        text: "Good UX isn't just about design — it's about creating experiences that make users come back again and again.",
+    },
+    {
+        image: "/company.jpg",
+        date: "15 Juli 2025",
+        title: "Integrating AI to scale your SaaS product",
+        text: "Learn how to integrate AI seamlessly into your product to automate workflows and enhance user experience.",
+    },
+    {
+        image: "/company.jpg",
+        date: "14 Juli 2025",
+        title: "Building trust with your customers through UX",
+        text: "Good UX isn't just about design — it's about creating experiences that make users come back again and again.",
+    },
+    {
+        image: "/company.jpg",
+        date: "15 Juli 2025",
+        title: "Integrating AI to scale your SaaS product",
+        text: "Learn how to integrate AI seamlessly into your product to automate workflows and enhance user experience.",
+    },
+]
+
+export default function HeaderBlog() {
+    return (
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-28 ">
+            <motion.div
+                initial={{ opacity: 0, y: -40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                className="text-center mb-16"
+            >
+                <Button variant="disabled" className="mb-4">
+                    Blog
+                </Button>
+                <h1 className="font-bold text-3xl md:text-5xl text-black max-w-[540px] mx-auto leading-tight">
+                    News & Articles
+                </h1>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl">
+                {blogs.map((item, i) => (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: i * 0.1 }}
+                        className="relative group h-[400px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                    >
+                        <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            priority
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-10">
+                            <p className="text-sm opacity-80">{item.date}</p>
+                            <h2 className="text-2xl font-semibold mt-2 mb-2 leading-snug group-hover:text-[#A99FFF] transition-colors">
+                                {item.title}
+                            </h2>
+                            <p className="text-sm text-gray-200 line-clamp-2">
+                                {item.text}
+                            </p>
+                            <div className="pt-4">
+                                <Button
+                                    variant="link"
+                                    className="text-white hover:text-[#A99FFF] px-0 font-medium transition-colors"
+                                >
+                                    Read More →
+                                </Button>
+                            </div>
+                        </div>
+                    </motion.div>
+                ))}
+            </div>
+        </section>
+    )
+}
