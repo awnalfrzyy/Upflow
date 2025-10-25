@@ -1,4 +1,4 @@
-import Features from "@/components/features/features";
+import Features from "@/components/features";
 
 
 export default function Featurespage() {

@@ -1,4 +1,4 @@
-import HeaderBlog from "@/components/blog/header";
+import HeaderBlog from "@/components/blog";
 
 
 export default function Blog() {

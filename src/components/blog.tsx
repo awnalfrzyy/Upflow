@@ -1,47 +1,9 @@
 'use client'
 
 import Image from "next/image"
-import { Button } from "../ui/button"
+import { Button } from "./ui/button"
 import { motion } from "framer-motion"
-
-const blogs = [
-    {
-        image: "/company.jpg",
-        date: "10 Juli 2025",
-        title: "10 Top tips for making your SaaS product sticky",
-        text: "It is a long established fact that a reader will be distracted by readable content when looking at its layout.",
-    },
-    {
-        image: "/company.jpg",
-        date: "12 Juli 2025",
-        title: "How to improve your app performance in 2025",
-        text: "Discover how to make your product faster and more efficient with the latest optimization trends.",
-    },
-    {
-        image: "/company.jpg",
-        date: "14 Juli 2025",
-        title: "Building trust with your customers through UX",
-        text: "Good UX isn't just about design — it's about creating experiences that make users come back again and again.",
-    },
-    {
-        image: "/company.jpg",
-        date: "15 Juli 2025",
-        title: "Integrating AI to scale your SaaS product",
-        text: "Learn how to integrate AI seamlessly into your product to automate workflows and enhance user experience.",
-    },
-    {
-        image: "/company.jpg",
-        date: "14 Juli 2025",
-        title: "Building trust with your customers through UX",
-        text: "Good UX isn't just about design — it's about creating experiences that make users come back again and again.",
-    },
-    {
-        image: "/company.jpg",
-        date: "15 Juli 2025",
-        title: "Integrating AI to scale your SaaS product",
-        text: "Learn how to integrate AI seamlessly into your product to automate workflows and enhance user experience.",
-    },
-]
+import { blogs } from "@/data/blog"
 
 export default function HeaderBlog() {
     return (
