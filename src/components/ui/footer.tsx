@@ -3,26 +3,25 @@
 import { Separator } from "@/components/ui/separator";
 import { Mail, Phone, Apple, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Line from "./line";
 import Image from "next/image";
 
 
 export default function Footer() {
     return (
-        <footer className="bg-transparent text-gray-300  px-20 py-16 flex flex-col gap-10">
-            <div className="">
-                <Line length={1200} thickness={1} color="black" />
+        <footer className="bg-transparent text-gray-300 px-6 md:px-20 py-10 md:py-16 flex flex-col gap-8">
+            {/* responsive top divider */}
+            <div className="w-full">
+                <div className="w-full h-px bg-gray-700" />
             </div>
-            {/* Bagian Atas */}
-            <div className="flex justify-between flex-wrap gap-10">
-                {/* Kiri */}
-                <div className="flex flex-col gap-4 max-w-sm">
+            <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-10">
+                <div className="flex flex-col gap-4 w-full md:w-auto max-w-sm">
                     <div className="flex items-center gap-2">
                         <Image
                             src="/logo.svg"
                             alt="Panel Illustration"
-                            width={360}
-                            height={360}
+                            width={120}
+                            height={120}
+                            className="w-28 h-auto"
                             priority
                         />
                     </div>
@@ -52,7 +51,7 @@ export default function Footer() {
                 </div>
 
                 {/* Tengah */}
-                <div className="flex gap-20">
+                <div className="flex flex-col sm:flex-row gap-8 md:gap-20 w-full">
                     <div className="flex flex-col gap-4">
                         <h3 className="text-white font-semibold text-lg">Pages</h3>
                         <Separator className="bg-gray-700 w-24" />
@@ -89,8 +88,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Kanan */}
-                <div className="bg-neutral-100 text-neutral-900 rounded-3xl p-8 max-w-sm shadow-lg">
+                <div className="bg-neutral-100 text-neutral-900 rounded-3xl p-6 md:p-8  w-full md:w-auto max-w-sm shadow-lg">
                     <p className="text-indigo-600 text-sm font-semibold mb-2">Download</p>
                     <h2 className="text-lg font-bold leading-snug mb-2">
                         Its suitable to all devices and screens
@@ -99,30 +97,24 @@ export default function Footer() {
                         It is a long established fact that a reader will be distracted layout.
                     </p>
 
-                    <div className="flex gap-3">
-                        <Button className="bg-black text-white hover:bg-neutral-800 rounded-full px-5 py-5">
-                            <Apple className="w-4 h-4 mr-2" /> App Store
+                    <div className="flex flex-col sm:flex-row gap-3">
+                        <Button className="bg-gray-200 text-black hover:bg-white rounded-full px-5 py-3 w-full sm:w-auto">
+                            <Image src="https://img.icons8.com/ios-filled/50/mac-os.png" alt="App Store" width={16} height={16} className="w-4 h-4 mr-2" />
+                            <span className="ml-2">App Store</span>
                         </Button>
-                        <Button variant="outline" className="rounded-full border border-gray-400 px-5 py-5">
-                            <Play className="w-4 h-4 mr-2" /> Play Store
+                        <Button variant="outline" className="rounded-full border border-gray-400 px-5 py-3 w-full sm:w-auto">
+                            <Image src="https://img.icons8.com/fluency/48/google-play-store-new.png" alt="Play Store" width={16} height={16} className="w-4 h-4 mr-2" />
+                            <span className="ml-2">Play Store</span>
                         </Button>
                     </div>
                 </div>
             </div>
-
-            {/* Line */}
             <Separator className="bg-gray-700" />
-
-            {/* Copyright */}
-            <div className="flex justify-between flex-wrap gap-3 text-sm text-gray-500">
-                <p>
-                    Copyright © <span className="text-white">Saasup</span> | Designed by Victorflow – Powered by Webflow
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-sm text-gray-500">
+                <p className="w-full md:w-auto">
+                    Copyright © <span className="text-white">Saasup</span> | Designed by Victorflow Powered by Webflow
                 </p>
-                <div className="flex gap-4">
-                    <span className="hover:text-white cursor-pointer">🌐</span>
-                    <span className="hover:text-white cursor-pointer">🐦</span>
-                    <span className="hover:text-white cursor-pointer">📷</span>
-                </div>
+
             </div>
         </footer>
     );
