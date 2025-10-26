@@ -25,7 +25,7 @@ export default function FormTrial() {
                             <Button
                                 type="submit"
                                 variant="secondary"
-                                size="xl"
+                                size="lg"
                                 className="bg-white text-[#684FFF] rounded-full hover:bg-gray-100 font-semibold whitespace-nowrap"
                             >
                                 Subscribe

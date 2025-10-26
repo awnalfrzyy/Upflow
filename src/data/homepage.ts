@@ -12,6 +12,7 @@ export const cardFeatures = [
         description:
             "Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.",
         btn: "Learn more",
+        href: "/homepage/integration/2",
     },
     {
         image: "/Icon(2).svg",
@@ -19,6 +20,7 @@ export const cardFeatures = [
         description:
             "Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.",
         btn: "Learn more",
+        href: "/homepage/integration/3",
     },
 ];
 

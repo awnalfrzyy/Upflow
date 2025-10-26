@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import Image from "next/image";
 import { Button } from "./ui/button";
@@ -6,14 +6,17 @@ import { motion } from "motion/react";
 import { cards } from "@/data/integration";
 import FormTrial from "./form-trial";
 import FullBleed from "./ui/FullBleed";
+import { useRouter } from "next/navigation";
 
 export default function Integration() {
+    const router = useRouter();
+
     return (
         <FullBleed className="">
             <div className="min-h-screen flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 lg:py-28 px-12 sm:px-5 md:px-5 ">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-10 sm:mb-12 md:mb-16">
-                        <Button variant="disabled" className="mb-4">Integrations</Button>
+                        <Button variant="ghost" className="mb-4">Integrations</Button>
                         <motion.div
                             initial={{ opacity: 0, y: -40 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +32,8 @@ export default function Integration() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
                         {cards.map((item, i) => (
                             <motion.div
-                                key={i}
+                                key={item.id}
+                                onClick={() => router.push(`/homepage/features/integration/${item.id}`)}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -65,6 +69,10 @@ export default function Integration() {
 
                                 <div className="pt-5 sm:pt-6 flex">
                                     <Button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            router.push(`/homepage/features/integration/integrationDetail/${item.id}`);
+                                        }}
                                         variant="link"
                                         className="px-0 font-medium text-xs sm:text-sm text-[#6B6B6B] hover:text-[#5236FF] transition-colors"
                                     >

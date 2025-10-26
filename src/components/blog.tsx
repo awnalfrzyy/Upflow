@@ -15,7 +15,7 @@ export default function HeaderBlog() {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="text-center mb-10 sm:mb-12 md:mb-16"
             >
-                <Button variant="disabled" className="mb-4">
+                <Button variant="ghost" className="mb-4">
                     Blog
                 </Button>
                 <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black max-w-[680px] mx-auto leading-tight">

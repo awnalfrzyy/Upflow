@@ -20,7 +20,7 @@ export default function Features() {
                             transition={{ duration: 0.7, ease: "easeOut" }}
                             className="text-center mb-8 sm:mb-12 md:mb-16"
                         >
-                            <Button variant="disabled" className="mb-4">Analytics</Button>
+                            <Button variant="ghost" className="mb-4">Analytics</Button>
                             <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black max-w-xl mx-auto leading-tight px-4">
                                 Powerful features to boost your productivity
                             </h1>
@@ -55,7 +55,7 @@ export default function Features() {
                             transition={{ duration: 0.7, ease: "easeOut" }}
                             className="text-center mb-8 sm:mb-12 md:mb-16"
                         >
-                            <Button variant="disabled" className="mb-4">Integration</Button>
+                            <Button variant="ghost" className="mb-4">Integration</Button>
                             <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black max-w-xl mx-auto leading-tight px-4">
                                 Connect all your tools and work efficiently.
                             </h1>

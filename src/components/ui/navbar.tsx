@@ -27,9 +27,8 @@ export default function Navbar() {
                     <Image src="/logo.svg" alt="Logo" width={96} height={96} priority />
                 </div>
 
-                {/* Desktop links */}
                 <div className="hidden md:flex items-center">
-                    <div className="w-[607px] py-2 bg-neutral-500/10 rounded-full text-center items-center justify-center">
+                    <div className="w-[607px] py-3 bg-neutral-50 rounded-full text-center items-center justify-center">
                         <ul className="flex justify-between px-6 items-center">
                             {Navigation.map((item, i) => (
                                 <li key={i}>
@@ -43,14 +42,14 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                    {/* Sign In (desktop) */}
                     <div className="hidden md:block">
-                        <Button variant="outline" onClick={() => router.push("/auth/login")}>
+                        <Button variant="outline"
+                            className="rounded-full p-5"
+                            onClick={() => router.push("/auth/login")}>
                             Sign In
                         </Button>
                     </div>
 
-                    {/* Mobile hamburger */}
                     <Button
                         variant="ghost"
                         aria-label="Open menu"

@@ -10,6 +10,7 @@ import FullBleed from "./ui/FullBleed";
 import { cardFeatures, BtnHIW, pricingPlans, testimonials } from "@/data/homepage";
 import FormTrial from "./form-trial";
 import { Cards } from "./cards";
+import { href } from 'react-router-dom';
 
 export default function Home() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -103,7 +104,7 @@ export default function Home() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="text-center mb-8 md:mb-12"
                         >
-                            <Button variant="disabled" className="mb-4">Features</Button>
+                            <Button variant="ghost" className="mb-4">Features</Button>
                             <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black max-w-xl mx-auto px-4">
                                 Powerful features to boost your productivity
                             </h1>
@@ -120,7 +121,9 @@ export default function Home() {
                                     key={i}
                                     image={feature.image}
                                     title={feature.title}
-                                    text={feature.description} />
+                                    text={feature.description}
+                                    href={feature.href}
+                                />
                             ))}
                         </motion.div>
                     </div>
@@ -189,7 +192,7 @@ export default function Home() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="flex flex-col items-center gap-6 max-w-2xl mx-auto text-center mb-12"
                         >
-                            <Button variant="disabled">How It Work</Button>
+                            <Button variant="ghost">How It Work</Button>
 
                             <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black px-4">
                                 Work smarter with easy access for user..
@@ -197,7 +200,7 @@ export default function Home() {
 
                             <div className="flex flex-row gap-3 justify-center">
                                 {BtnHIW.map((item, i) => (
-                                    <Button key={i} variant="secondary" size="xl" className="text-sm sm:text-base">
+                                    <Button key={i} variant="secondary" size="lg" className="text-sm sm:text-base">
                                         {item.title}
                                     </Button>
                                 ))}
@@ -256,7 +259,7 @@ export default function Home() {
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 className="lg:col-span-4 flex flex-col gap-6"
                             >
-                                <Button variant="disabled" className="w-fit">Pricing</Button>
+                                <Button variant="ghost" className="w-fit">Pricing</Button>
                                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
                                     Simple and flexible pricing
                                 </h1>
@@ -364,7 +367,7 @@ export default function Home() {
                         className="container mx-auto px-4 sm:px-6 lg:px-8"
                     >
                         <div className="text-center mb-8 md:mb-12">
-                            <Button variant="disabled" className=" bg-[#5236FF] text-white  mb-4">
+                            <Button variant="ghost" className=" bg-[#5236FF] text-white  mb-4">
                                 Testimonial
                             </Button>
                             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
@@ -399,7 +402,7 @@ export default function Home() {
                                             </Avatar>
 
                                             <p className="text-base sm:text-lg lg:text-xl italic max-w-2xl leading-relaxed text-black">
-                                                "{item.text}"
+                                                {item.text}
                                             </p>
                                             <h3 className="font-semibold text-base sm:text-lg mt-4 text-black">
                                                 — {item.name}
