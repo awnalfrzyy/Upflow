@@ -19,7 +19,8 @@
 
 # production
 /build
-src/data/
+src/data
+/jest.config.js
 
 # misc
 .DS_Store
