@@ -1,13 +1,13 @@
 export const cardFeatures = [
     {
-        image: "/Icon.svg",
+        image: "elements/Icon.svg",
         title: "Secured Platform",
         description:
             "Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.",
         btn: "Learn more",
     },
     {
-        image: "/Icon(1).svg",
+        image: "elements/Icon(1).svg",
         title: "Advanced Analytics",
         description:
             "Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.",
@@ -15,7 +15,7 @@ export const cardFeatures = [
         href: "/homepage/integration/2",
     },
     {
-        image: "/Icon(2).svg",
+        image: "elements/Icon(2).svg",
         title: "Powerful Automation",
         description:
             "Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.",

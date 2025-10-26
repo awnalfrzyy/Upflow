@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Paraf, counters, Data, Card } from "@/data/about"
+import { Paraf, counters, Data, CardWork } from "@/data/about"
 import AnimatedCounter from "./ui/counter"
 import { Button } from "./ui/button"
 import FullBleed from "./ui/FullBleed"
@@ -32,7 +32,7 @@ export default function AboutPage() {
                 </motion.p>
 
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-                    {["/company.jpg", "/company(1).jpg"].map((src, i) => (
+                    {["image/company.jpg", "image/company(1).jpg"].map((src, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 50 }}
@@ -135,7 +135,7 @@ export default function AboutPage() {
                     >
                         <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-xl">
                             <Image
-                                src="/PanelOne.png"
+                                src="/element/PanelOne.png"
                                 alt="Panel Illustration"
                                 width={560}
                                 height={560}
@@ -203,7 +203,7 @@ export default function AboutPage() {
                     </motion.div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 w-full justify-center">
-                        {Card.map((item, i) => (
+                        {CardWork.map((item, i) => (
                             <motion.div
                                 key={i}
                                 initial={{ opacity: 0, y: 30 }}

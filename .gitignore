@@ -20,7 +20,7 @@
 # production
 /build
 src/data
-/jest.config.js
+jest.config.js
 
 # misc
 .DS_Store

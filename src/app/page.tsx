@@ -17,7 +17,7 @@ export default function SplashPage() {
   return (
     <div className="h-screen w-full flex items-center justify-center bg-white">
       <Image
-        src="/logo.svg"
+        src="icons/logo.svg"
         alt="Logo"
         width={120}
         height={120}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "./button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const Navigation = [
     { title: "Home", href: "/homepage" },
@@ -13,7 +13,7 @@ const Navigation = [
     { title: "Features", href: "/homepage/features" },
     { title: "Pages", href: "/homepage/Pages" },
     { title: "Blog", href: "/homepage/blog" },
-    { title: "Chart", href: "/homepage/Chart" },
+    { title: "Career", href: "/homepage/carrer" },
 ];
 
 export default function Navbar() {
@@ -24,7 +24,7 @@ export default function Navbar() {
         <>
             <nav className="w-full px-6 md:px-48 py-4 bg-transparent flex items-center justify-between fixed top-0 left-0 z-50">
                 <div className="flex items-center gap-4">
-                    <Image src="/logo.svg" alt="Logo" width={96} height={96} priority />
+                    <Image src="icons/logo.svg" alt="Logo" width={96} height={96} priority />
                 </div>
 
                 <div className="hidden md:flex items-center">

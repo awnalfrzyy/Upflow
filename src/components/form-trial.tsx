@@ -35,7 +35,7 @@ export default function FormTrial() {
 
                     <div className="relative hidden lg:flex items-center justify-center">
                         <Image
-                            src="/Image(3).svg"
+                            src="elements/Image(3).svg"
                             alt="Panel Illustration"
                             width={400}
                             height={400}
@@ -43,7 +43,7 @@ export default function FormTrial() {
                             priority
                         />
                         <Image
-                            src="/Image(2).svg"
+                            src="elements/Image(2).svg"
                             alt="Panel Illustration Small"
                             width={220}
                             height={220}

@@ -1,16 +1,15 @@
 "use client";
+
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
 import { ChevronRight, ChevronLeft } from "lucide-react"
 import FullBleed from "./ui/FullBleed";
 import { cardFeatures, BtnHIW, pricingPlans, testimonials } from "@/data/homepage";
 import FormTrial from "./form-trial";
 import { Cards } from "./cards";
-import { href } from 'react-router-dom';
 
 export default function Home() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -36,7 +35,7 @@ export default function Home() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
                 className="absolute right-0 -top-20 h-full hidden lg:flex pointer-events-none">
                 <Image
-                    src="/Background.svg"
+                    src="elements/Background.svg"
                     alt="Background"
                     width={1020}
                     height={1020}
@@ -79,7 +78,7 @@ export default function Home() {
                                 className="z-10 order-1 lg:order-2"
                             >
                                 <Image
-                                    src="/PanelOne.png"
+                                    src="elements/PanelOne.png"
                                     alt="Panel Illustration"
                                     width={920}
                                     height={920}
@@ -135,7 +134,7 @@ export default function Home() {
 
                             <div className="order-1 lg:order-2 flex justify-center">
                                 <Image
-                                    src="/Image(1).svg"
+                                    src="elements/Image(1).svg"
                                     alt="Hero"
                                     width={500}
                                     height={500}
@@ -160,7 +159,7 @@ export default function Home() {
 
                                 <div className="flex flex-col lg:flex-row gap-4 items-center lg:items-start bg-neutral-100 p-2 rounded-xl">
                                     <Image
-                                        src="/Icon(4).svg"
+                                        src="icons/Icon(4).svg"
                                         alt="icon money"
                                         width={64}
                                         height={64}
@@ -237,7 +236,7 @@ export default function Home() {
                                 className="flex justify-center"
                             >
                                 <Image
-                                    src="/Group 15.svg"
+                                    src="elements/Group 15.svg"
                                     alt="illustration"
                                     width={380}
                                     height={380}
@@ -273,7 +272,7 @@ export default function Home() {
                                         {["visa", "googlepay", "paypal", "amazon"].map((src, idx) => (
                                             <Image
                                                 key={idx}
-                                                src={`/${src}.svg`}
+                                                src={`icons/${src}.svg`}
                                                 alt={src}
                                                 width={40}
                                                 height={40}
